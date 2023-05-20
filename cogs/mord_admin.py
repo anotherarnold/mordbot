@@ -61,7 +61,8 @@ class Administration(commands.Cog):
             await ctx.send("Resuming activities.")
         else:
             await ctx.send("Silence mode not active.")
-
+    
+    #This was used in debugging but could probably be cut.
     @commands.command(name="refresh", hidden = True)
     @commands.is_owner()
     async def refresh(self, ctx):
